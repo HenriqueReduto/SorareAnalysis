@@ -1,0 +1,333 @@
+Matched Club,Player,Position,games,avg_score,median_score,ceiling,floor,volatility,goals,assists
+Galatasaray Spor Kulübü,Kerem Aktürkoğlu,Forward,5,65.84,71.7,84.4,46.0,18.14918730962905,2.0,3.0
+Beşiktaş Jimnastik Kulübü,Orkun Kökçü,Midfielder,36,63.458333333333336,65.15,100.0,0.0,24.17178254553378,8.0,10.0
+The Celtic Football Club,Cameron Carter-Vickers,Defender,48,63.16041666666666,61.85,100.0,0.0,22.460544503577005,1.0,0.0
+Sport Lisboa e Benfica,Nicolás Otamendi,Defender,93,62.921505376344086,63.5,100.0,0.0,21.963778727033276,10.0,9.0
+Galatasaray Spor Kulübü,Victor Osimhen,Forward,69,62.25797101449275,64.1,96.0,34.0,17.2880050714965,54.0,15.0
+The Celtic Football Club,Alistair Johnston,Defender,45,61.771111111111104,66.7,100.0,0.0,26.297602917222683,4.0,9.0
+Sporting Clube de Portugal,Luis Suárez,Forward,44,60.69772727272727,60.55,100.0,27.6,18.92121349956136,33.0,9.0
+Sport Lisboa e Benfica,Orkun Kökçü,Midfielder,48,60.458333333333336,59.15,100.0,26.6,20.639373994025313,11.0,9.0
+The Celtic Football Club,Benjamin Nygren,Forward,45,58.81555555555555,55.9,100.0,33.3,18.902488479220683,19.0,6.0
+Futebol Clube do Porto,Jan Bednarek,Defender,44,58.60681818181818,59.7,100.0,12.6,20.629572335772526,2.0,0.0
+Rangers Football Club,Václav Černý,Forward,42,58.56666666666667,54.95,100.0,32.7,18.816205608356192,17.0,5.0
+The Celtic Football Club,Callum McGregor,Midfielder,84,58.04761904761905,55.2,100.0,27.5,15.529959202038564,10.0,4.0
+Sporting Clube de Portugal,Gonçalo Inácio,Defender,79,57.76708860759494,55.0,100.0,0.0,23.458303005048414,7.0,6.0
+Fenerbahçe Spor Kulübü,N'Golo Kanté,Midfielder,16,57.66875,54.55,88.3,33.5,16.821047083936243,2.0,0.0
+Fenerbahçe Spor Kulübü,Mattéo Guendouzi,Midfielder,17,57.22941176470588,56.1,100.0,37.6,15.633048515320128,1.0,1.0
+Rangers Football Club,James Tavernier,Defender,90,57.20333333333333,57.5,100.0,0.0,26.862983386148578,13.0,14.0
+The Celtic Football Club,Jota,Forward,12,57.15833333333333,57.4,77.6,35.8,16.735941635421728,4.0,2.0
+Sporting Clube de Portugal,Morten Hjulmand,Midfielder,75,57.01066666666667,55.6,100.0,0.0,17.758694660251244,5.0,6.0
+Fenerbahçe Spor Kulübü,Marco Asensio,Midfielder,36,57.00833333333334,59.4,100.0,0.0,22.444348636444893,11.0,13.0
+Sporting Clube de Braga,Ricardo Horta,Forward,94,56.913829787234036,49.45,100.0,0.0,19.992281311964817,31.0,19.0
+Trabzonspor Kulübü,Christ Inao Oulaï,Midfielder,25,56.776,58.5,100.0,29.3,19.31957729006167,2.0,4.0
+Sporting Clube de Portugal,Pedro Gonçalves,Midfielder,53,56.715094339622645,49.5,100.0,0.0,22.93397208229961,19.0,14.0
+Trabzonspor Kulübü,Uğurcan Çakır,Goalkeeper,41,56.617073170731715,53.5,98.5,13.2,22.71475184146884,0.0,0.0
+Rangers Football Club,Nicolas Raskin,Midfielder,85,56.472941176470584,52.8,99.8,27.5,18.394612230314653,7.0,16.0
+Trabzonspor Kulübü,Oleksandr Zubkov,Midfielder,45,56.45111111111112,51.2,99.2,29.2,19.362330135673968,10.0,16.0
+Sporting Clube de Braga,Bruma,Forward,27,56.24074074074074,45.7,90.0,30.1,20.170985622142037,10.0,7.0
+Trabzonspor Kulübü,Paul Onuachu,Forward,30,55.943333333333335,60.0,92.4,24.7,19.42898090097818,22.0,2.0
+Galatasaray Spor Kulübü,Davinson Sánchez,Defender,85,55.355294117647055,57.0,100.0,0.0,22.70115114493805,6.0,2.0
+Beşiktaş Jimnastik Kulübü,Emmanuel Agbadou,Defender,14,55.214285714285715,55.85,99.6,0.0,27.621643050969375,1.0,1.0
+The Celtic Football Club,Kieran Tierney,Defender,44,55.21363636363637,51.65,100.0,0.0,25.3465707135001,5.0,8.0
+Rangers Football Club,Tuur Rommens,Defender,7,54.84285714285714,51.8,98.6,0.0,33.73459436754586,1.0,1.0
+Fenerbahçe Spor Kulübü,Kerem Aktürkoğlu,Forward,40,54.8375,49.15,95.4,0.0,23.275613820433367,14.0,8.0
+Beşiktaş Jimnastik Kulübü,Václav Černý,Forward,30,54.78,49.0,99.6,31.5,16.99528129237338,5.0,8.0
+Futebol Clube do Porto,Diogo Costa,Goalkeeper,87,54.265517241379314,61.0,99.5,0.0,19.457083528593202,0.0,0.0
+Sporting Clube de Braga,Rodrigo Zalazar,Midfielder,72,54.22361111111111,50.2,98.0,0.0,22.24462899602011,28.0,16.0
+Galatasaray Spor Kulübü,Lucas Torreira,Midfielder,87,54.18390804597701,51.1,97.0,0.0,18.843238708213136,8.0,11.0
+Fußballclub Red Bull Salzburg,Mads Bidstrup,Midfielder,67,54.12686567164179,52.3,97.1,26.0,14.432744568678299,0.0,0.0
+Galatasaray Spor Kulübü,Abdülkerim Bardakcı,Defender,86,54.06511627906977,55.5,100.0,0.0,18.915743629187396,4.0,4.0
+Sport Lisboa e Benfica,Kerem Aktürkoğlu,Forward,50,54.06399999999999,48.05,100.0,0.0,19.65921666801605,16.0,12.0
+The Celtic Football Club,Kasper Schmeichel,Goalkeeper,78,54.02051282051283,51.6,96.4,0.0,21.986113438922853,0.0,0.0
+Vitória Sport Clube,Ricardo Mangas,Defender,9,53.7,58.7,81.3,28.2,18.40638476181567,4.0,2.0
+Trabzonspor Kulübü,Chibuike Nwaiwu,Defender,17,53.30588235294118,53.0,90.3,0.0,21.030765279354295,3.0,1.0
+Galatasaray Spor Kulübü,Uğurcan Çakır,Goalkeeper,38,52.94736842105263,47.0,94.4,0.0,22.05055293591334,0.0,0.0
+Fenerbahçe Spor Kulübü,Talisca,Midfielder,61,52.92131147540983,47.2,96.3,15.3,20.49926921261746,33.0,6.0
+Rangers Football Club,Djeidi Gassama,Forward,47,52.921276595744686,49.9,81.2,31.0,15.669007573387509,8.0,6.0
+Sport Lisboa e Benfica,Vangelis Pavlidis,Forward,97,52.911340206185564,43.1,97.0,0.0,20.32205224774647,51.0,17.0
+Sport Lisboa e Benfica,Richard Ríos,Midfielder,39,52.748717948717946,48.1,98.5,19.5,19.093149388622308,6.0,5.0
+Galatasaray Spor Kulübü,Yunus Akgün,Forward,80,52.74375,46.8,100.0,0.0,22.921311976444954,21.0,22.0
+Trabzonspor Kulübü,Stefan Savić,Defender,39,52.58717948717949,53.1,100.0,0.0,19.821747486392436,1.0,1.0
+Trabzonspor Kulübü,Ernest Muçi,Midfielder,27,52.529629629629625,45.4,88.6,0.0,22.793923191783694,11.0,4.0
+Sport Lisboa e Benfica,Fredrik Aursnes,Midfielder,87,52.40229885057471,48.7,91.2,0.0,17.671373362427186,7.0,16.0
+Futebol Clube do Porto,Jakub Kiwior,Defender,40,52.339999999999996,54.5,100.0,0.0,28.32144969489579,0.0,2.0
+Rangers Football Club,John Souttar,Defender,69,52.11304347826087,52.5,95.7,0.0,22.641073510738625,1.0,0.0
+Trabzonspor Kulübü,Wagner Pina,Defender,31,52.07741935483871,55.3,100.0,21.2,19.592170369434474,0.0,7.0
+Beşiktaş Jimnastik Kulübü,Junior Olaïtan,Midfielder,14,51.94285714285714,47.8,76.4,28.0,15.642924883189169,2.0,2.0
+Fenerbahçe Spor Kulübü,Milan Škriniar,Defender,61,51.92950819672131,55.3,100.0,0.0,26.548605388747486,5.0,3.0
+Galatasaray Spor Kulübü,Gabriel Sara,Midfielder,84,51.839285714285715,46.9,100.0,0.0,21.893086425138613,8.0,15.0
+Sporting Clube de Portugal,Rui Silva,Goalkeeper,62,51.70322580645161,48.6,81.1,10.7,16.481852591059702,0.0,0.0
+Sporting Clube de Portugal,Geovany Quenda,Midfielder,70,51.494285714285716,46.55,89.8,29.8,14.444415055446028,6.0,13.0
+The Celtic Football Club,Julián Araujo,Defender,11,51.45454545454545,59.3,76.5,9.1,20.22737568921701,1.0,0.0
+Beşiktaş Jimnastik Kulübü,El Bilal Touré,Forward,22,51.35909090909092,51.75,86.5,32.8,15.186825715885309,5.0,5.0
+Sporting Clube de Portugal,Geny Catamo,Midfielder,78,51.305128205128206,45.6,95.8,26.2,16.079057100964512,13.0,9.0
+Rangers Football Club,Derek Cornelius,Defender,11,51.18181818181818,55.0,89.4,0.0,24.926083454157745,1.0,1.0
+Trabzonspor Kulübü,Mustafa Eskihellaç,Forward,43,51.13255813953488,46.9,92.4,19.9,14.927949512020868,0.0,7.0
+Fußballclub Red Bull Salzburg,Amar Dedić,Defender,17,50.976470588235294,46.0,87.9,18.7,18.454590533650588,0.0,2.0
+The Celtic Football Club,Arne Engels,Midfielder,76,50.91578947368421,44.75,100.0,0.0,20.599087699096962,15.0,13.0
+Futebol Clube do Porto,Victor Froholdt,Midfielder,46,50.699999999999996,42.8,99.6,28.5,18.23006064474584,7.0,6.0
+The Celtic Football Club,Daizen Maeda,Forward,81,50.565432098765434,45.2,93.1,19.8,17.6037649417236,27.0,16.0
+The Celtic Football Club,Auston Trusty,Defender,71,50.53802816901408,55.5,100.0,0.0,29.65315866671679,3.0,1.0
+The Celtic Football Club,Liam Scales,Defender,85,50.38705882352941,50.3,100.0,0.0,30.395060642883966,4.0,6.0
+Galatasaray Spor Kulübü,Leroy Sané,Forward,41,50.18292682926829,48.3,97.9,0.0,21.157763379419674,7.0,7.0
+Sporting Clube de Braga,Gustaf Lagerbielke,Defender,47,49.95531914893617,45.8,100.0,19.4,19.78533502271688,2.0,0.0
+Sporting Clube de Portugal,Daniel Bragança,Midfielder,49,49.834693877551025,44.5,93.9,0.0,22.160207871885365,10.0,7.0
+Fenerbahçe Spor Kulübü,Fred,Midfielder,88,49.82159090909091,48.25,99.5,0.0,21.151030239648783,9.0,10.0
+Futebol Clube do Porto,Oskar Pietuszewski,Forward,17,49.34705882352941,45.1,90.8,0.0,20.247935624621675,3.0,4.0
+Fenerbahçe Spor Kulübü,Nelson Semedo,Defender,39,49.3025641025641,46.2,87.3,11.5,18.73221945963533,1.0,3.0
+Fenerbahçe Spor Kulübü,Ederson,Goalkeeper,33,49.24848484848485,43.2,86.6,6.8,20.641389264232576,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Wilfred Ndidi,Midfielder,28,48.875,50.95,86.4,0.0,17.975263352524006,2.0,1.0
+Sport Lisboa e Benfica,Samuel Dahl,Defender,70,48.714285714285715,47.9,100.0,0.0,24.421707412887056,2.0,6.0
+Sporting Clube de Braga,Roger Fernandes,Forward,52,48.66730769230769,45.55,100.0,0.0,22.190200284985774,6.0,7.0
+Sporting Clube de Braga,Pau Víctor,Forward,51,48.562745098039215,43.5,93.6,0.0,19.119403346174934,15.0,5.0
+Rangers Football Club,Jack Butland,Goalkeeper,89,48.48876404494382,45.4,93.9,0.0,23.129248691774777,0.0,1.0
+Galatasaray Spor Kulübü,Roland Sallai,Forward,73,48.33698630136986,45.0,92.7,0.0,17.683282334589634,5.0,6.0
+Sport Lisboa e Benfica,Tomás Araújo,Defender,82,48.15243902439025,49.9,96.6,0.0,26.4720734546817,2.0,4.0
+Sporting Clube de Braga,Víctor Gómez,Defender,96,48.1,49.75,94.1,0.0,22.286493431531216,2.0,14.0
+Futebol Clube do Porto,Gabri Veiga,Midfielder,46,48.08695652173913,44.55,92.6,0.0,20.337000857174942,5.0,11.0
+Fußballclub Red Bull Salzburg,Stefan Lainer,Defender,41,47.97560975609756,48.1,100.0,0.0,21.65314966105168,0.0,2.0
+Sport Lisboa e Benfica,Amar Dedić,Defender,40,47.7625,48.150000000000006,95.3,0.0,21.982681849175076,1.0,5.0
+Vitória Sport Clube,Gustavo Silva,Forward,49,47.41020408163265,40.5,80.1,12.8,15.483529486979048,13.0,2.0
+Futebol Clube do Porto,Alberto Costa,Defender,43,47.18604651162791,44.4,100.0,0.0,22.62614986707436,1.0,9.0
+The Celtic Football Club,Reo Hatate,Midfielder,85,47.13411764705882,41.3,100.0,0.0,18.419791070509792,15.0,9.0
+Vitória Sport Clube,Rodrigo Abascal,Defender,30,47.05,53.05,100.0,0.0,25.654518322214265,1.0,2.0
+Trabzonspor Kulübü,André Onana,Goalkeeper,29,46.9,43.4,90.5,19.7,17.884989716040014,0.0,1.0
+Sport Lisboa e Benfica,Enzo Barrenechea,Midfielder,44,46.89090909090908,47.25,92.5,0.0,21.8567728652829,2.0,0.0
+Vitória Sport Clube,Gonçalo Nogueira,Midfielder,24,46.87083333333334,43.3,95.2,0.0,18.86018302199606,0.0,4.0
+Vitória Sport Clube,Noah Saviolo,Forward,30,46.75333333333333,44.75,92.4,30.8,14.493226321126789,2.0,5.0
+Trabzonspor Kulübü,Eren Elmalı,Defender,24,46.49166666666667,43.15,92.8,0.0,24.829959405081013,0.0,1.0
+Rangers Football Club,Andreas Skov Olsen,Forward,10,46.309999999999995,51.3,74.5,0.0,27.278825732302575,1.0,3.0
+Trabzonspor Kulübü,Felipe Augusto,Forward,34,46.11764705882353,40.3,82.9,0.0,18.88296443387668,13.0,0.0
+Futebol Clube do Porto,Pepê,Forward,87,46.08850574712643,43.8,81.0,0.0,17.20905268319188,8.0,10.0
+Beşiktaş Jimnastik Kulübü,Kristjan Asllani,Midfielder,14,46.050000000000004,42.0,93.5,14.0,18.391417312682314,2.0,2.0
+Futebol Clube do Porto,Nehuen Pérez,Defender,44,45.90681818181818,47.3,100.0,0.0,23.620235685247483,2.0,2.0
+Galatasaray Spor Kulübü,Noa Lang,Forward,19,45.794736842105266,41.9,83.1,0.0,22.158456466605614,2.0,3.0
+Rangers Football Club,Youssef Chermiti,Forward,33,45.71212121212121,37.4,100.0,26.1,18.848636515272087,11.0,3.0
+Fußballclub Red Bull Salzburg,Yorbe Vertessen,Forward,57,45.67894736842105,38.0,83.7,0.0,16.913696234139714,4.0,0.0
+Beşiktaş Jimnastik Kulübü,Cengiz Ünder,Forward,28,45.635714285714286,40.099999999999994,82.1,0.0,19.991483636524276,5.0,3.0
+Fußballclub Red Bull Salzburg,Soumaïla Diabaté,Midfielder,45,45.535555555555554,48.3,88.8,0.0,22.97652117385322,0.0,1.0
+Beşiktaş Jimnastik Kulübü,Milot Rashica,Midfielder,69,45.50144927536232,41.7,98.0,0.0,21.295888119773007,7.0,13.0
+Galatasaray Spor Kulübü,Mario Lemina,Midfielder,53,45.47735849056604,43.9,84.7,0.0,20.69012809483188,4.0,4.0
+Fenerbahçe Spor Kulübü,Jayden Oosterwolde,Defender,55,45.42545454545455,45.6,77.8,10.3,15.211523631065074,0.0,1.0
+Sporting Clube de Portugal,Zeno Debast,Defender,70,45.395714285714284,42.35,96.5,0.0,25.33872808147144,1.0,6.0
+Fußballclub Red Bull Salzburg,Sota Kitano,Forward,38,45.28947368421053,41.7,87.8,0.0,20.472985357422466,0.0,2.0
+Fenerbahçe Spor Kulübü,Edson Álvarez,Midfielder,18,45.01111111111111,44.150000000000006,71.3,0.0,16.67565639907075,0.0,1.0
+Rangers Football Club,Mikey Moore,Forward,37,44.935135135135134,41.4,92.0,0.0,16.0385164216959,6.0,2.0
+Sporting Clube de Portugal,Ousmane Diomande,Defender,73,44.77123287671233,43.3,88.7,0.0,22.556364459406378,3.0,2.0
+Trabzonspor Kulübü,Edin Višća,Midfielder,48,44.699999999999996,45.35,100.0,0.0,22.102238261547463,4.0,7.0
+Rangers Football Club,Tochi Chukwuani,Midfielder,11,44.69090909090909,41.4,69.8,0.0,20.256330099277832,2.0,0.0
+Sporting Clube de Portugal,Hidemasa Morita,Midfielder,75,44.650666666666666,41.8,90.8,0.0,16.471854564462156,3.0,8.0
+Sporting Clube de Braga,João Moutinho,Midfielder,86,44.627906976744185,45.9,94.1,0.0,17.537030744468158,2.0,5.0
+Futebol Clube do Porto,Alan Varela,Midfielder,87,44.42873563218391,45.5,100.0,0.0,17.28287166630442,2.0,2.0
+Futebol Clube do Porto,Borja Sainz,Midfielder,44,44.38636363636363,39.4,82.4,0.0,18.693508273880095,6.0,6.0
+Sporting Clube de Portugal,Fotis Ioannidis,Forward,18,44.327777777777776,37.6,84.4,32.3,14.733627226241001,3.0,1.0
+Sporting Clube de Portugal,Nuno Santos,Forward,17,44.141176470588235,45.3,84.3,0.0,20.96309432143575,1.0,2.0
+Vitória Sport Clube,Samu,Midfielder,73,44.13835616438356,39.3,85.4,0.0,18.043686416098463,9.0,5.0
+Fenerbahçe Spor Kulübü,Anthony Musaba,Forward,17,44.13529411764706,37.9,73.1,24.4,14.79906843252602,1.0,4.0
+Trabzonspor Kulübü,Tim Jabol-Folcarelli,Midfielder,39,44.117948717948714,46.0,87.2,0.0,21.49568955315744,0.0,3.0
+Fenerbahçe Spor Kulübü,İsmail Yüksek,Midfielder,79,43.846835443037975,43.9,99.5,0.0,23.205911246496356,2.0,5.0
+Futebol Clube do Porto,Luuk de Jong,Forward,6,43.666666666666664,41.150000000000006,64.0,34.6,10.840233699817851,1.0,0.0
+Fußballclub Red Bull Salzburg,Maurits Kjærgaard,Midfielder,38,43.623684210526314,42.2,100.0,0.0,26.659539484379764,2.0,2.0
+Beşiktaş Jimnastik Kulübü,Ernest Muçi,Midfielder,43,43.574418604651164,40.0,83.5,0.0,17.802248293313642,5.0,4.0
+Beşiktaş Jimnastik Kulübü,Emirhan Topçu,Defender,73,43.40547945205479,43.7,93.4,0.0,24.46350961926626,2.0,1.0
+Galatasaray Spor Kulübü,Mauro Icardi,Forward,59,43.27457627118644,36.0,100.0,0.0,21.750898461191948,20.0,3.0
+Sporting Clube de Braga,Sikou Niakaté,Defender,66,43.231818181818184,46.35,96.5,0.0,24.17957280968258,2.0,2.0
+Galatasaray Spor Kulübü,Eren Elmalı,Defender,52,43.099999999999994,38.95,95.8,0.0,21.012890534799126,3.0,1.0
+Sporting Clube de Braga,Florian Grillitsch,Midfielder,35,43.06857142857143,41.7,100.0,0.0,25.388415276501618,3.0,2.0
+Sporting Clube de Portugal,Luis Guilherme,Forward,14,43.0,40.55,68.0,25.2,11.284298144562854,1.0,0.0
+Sport Lisboa e Benfica,Leandro Barreiro,Midfielder,89,42.933707865168536,39.4,100.0,0.0,18.854851942598856,10.0,10.0
+Sport Lisboa e Benfica,Dodi Lukébakio,Forward,24,42.7125,43.3,88.1,0.0,21.343633864029318,0.0,5.0
+Fußballclub Red Bull Salzburg,Karim Konaté,Forward,30,42.70333333333333,37.650000000000006,81.9,0.0,18.976055389909664,0.0,1.0
+Trabzonspor Kulübü,Anthony Nwakaeme,Midfielder,43,42.61162790697674,39.6,89.5,0.0,21.613148657839503,1.0,6.0
+Fußballclub Red Bull Salzburg,Edmund Baidoo,Forward,64,42.4546875,40.25,83.6,0.0,19.28679892048461,2.0,0.0
+Futebol Clube do Porto,Martim Fernandes,Defender,68,42.20735294117647,38.55,94.0,0.0,23.30778049696,1.0,8.0
+Futebol Clube do Porto,Seko Fofana,Midfielder,18,42.138888888888886,39.650000000000006,69.3,0.0,19.897062712248847,3.0,1.0
+The Celtic Football Club,Alex Oxlade-Chamberlain,Midfielder,9,42.06666666666667,44.0,71.2,0.0,19.55537010644391,2.0,0.0
+The Celtic Football Club,Sebastian Tounekti,Forward,34,42.05588235294118,40.150000000000006,80.7,0.0,16.690973629869905,2.0,1.0
+Sport Lisboa e Benfica,Alexander Bah,Defender,40,41.96,40.849999999999994,99.1,0.0,26.91926962090682,3.0,3.0
+Fenerbahçe Spor Kulübü,Mert Müldür,Defender,89,41.7123595505618,39.9,100.0,0.0,25.10595646556953,4.0,7.0
+Galatasaray Spor Kulübü,Ilkay Gündogan,Midfielder,37,41.70810810810811,40.6,99.5,0.0,22.622719386325606,2.0,4.0
+Beşiktaş Jimnastik Kulübü,Rıdvan Yılmaz,Defender,29,41.56896551724138,39.1,97.5,0.0,25.145762259392964,0.0,1.0
+Fußballclub Red Bull Salzburg,Alexander Schlager,Goalkeeper,71,41.530985915492955,38.7,81.0,0.0,18.899951561157092,0.0,1.0
+Galatasaray Spor Kulübü,Sacha Boey,Defender,18,41.25555555555556,37.7,81.0,0.0,26.101503725494936,2.0,0.0
+Fußballclub Red Bull Salzburg,Joane Gadou,Defender,60,41.230000000000004,43.3,93.8,0.0,23.846858159258556,0.0,0.0
+Rangers Football Club,Nasser Djiga,Defender,41,41.18536585365853,44.8,100.0,0.0,28.740377180680923,0.0,0.0
+Rangers Football Club,Ryan Naderi,Forward,8,40.9625,37.3,62.8,26.9,13.434915864482157,1.0,3.0
+Galatasaray Spor Kulübü,Wilfried Singo,Defender,31,40.87096774193548,39.5,100.0,0.0,25.373321863043305,2.0,3.0
+Sporting Clube de Braga,Lukáš Horníček,Goalkeeper,98,40.74387755102041,42.849999999999994,91.7,0.0,28.94533798377833,0.0,0.0
+Vitória Sport Clube,Nélson Oliveira,Forward,70,40.55142857142857,36.650000000000006,72.8,0.0,12.805385448331153,8.0,5.0
+Futebol Clube do Porto,Francisco Moura,Defender,84,40.542857142857144,42.75,93.4,0.0,27.010458865482548,7.0,13.0
+Sporting Clube de Braga,Gabri Martínez,Forward,92,40.448913043478264,38.95,88.8,0.0,20.593200064959124,10.0,10.0
+Rangers Football Club,Emmanuel Fernandez,Defender,38,40.31842105263158,45.599999999999994,89.5,0.0,31.695697169508147,5.0,0.0
+The Celtic Football Club,Tomáš Čvančara,Forward,12,40.291666666666664,38.5,67.9,0.0,17.62686267827568,2.0,2.0
+Rangers Football Club,Jayden Meghoma,Defender,42,40.24285714285715,43.9,82.3,0.0,22.81589243784235,1.0,6.0
+Galatasaray Spor Kulübü,Ismail Jakobs,Defender,64,40.21875,39.25,100.0,0.0,22.556735347204157,0.0,3.0
+Vitória Sport Clube,João Mendes,Defender,79,40.20126582278481,40.9,100.0,0.0,19.09908370517157,6.0,4.0
+Vitória Sport Clube,Oumar Camara,Forward,32,40.1875,36.849999999999994,82.7,0.0,16.60345377984216,5.0,2.0
+Fußballclub Red Bull Salzburg,Karim Onisiwo,Forward,40,40.0375,35.25,85.2,0.0,15.758525368665428,2.0,0.0
+Fußballclub Red Bull Salzburg,Frans Krätzig,Defender,43,39.95116279069768,42.5,100.0,0.0,26.178747942822255,1.0,0.0
+Beşiktaş Jimnastik Kulübü,Felix Uduokhai,Defender,70,39.92428571428571,44.55,100.0,0.0,27.437324814213625,0.0,0.0
+Futebol Clube do Porto,Rodrigo Mora,Midfielder,82,39.78048780487805,40.7,94.9,0.0,23.63262778565695,15.0,6.0
+Sport Lisboa e Benfica,António Silva,Defender,95,39.37789473684211,44.2,97.9,0.0,28.580953258030735,2.0,4.0
+Rangers Football Club,Dujon Sterling,Defender,46,39.36521739130435,39.75,95.3,0.0,22.62882348187623,1.0,2.0
+Vitória Sport Clube,Telmo Arcanjo,Midfielder,78,39.32435897435898,40.25,87.7,0.0,20.129594326900076,7.0,2.0
+Fußballclub Red Bull Salzburg,Moussa Yeo,Midfielder,62,38.519354838709674,38.0,92.7,0.0,21.12537778270934,1.0,1.0
+Trabzonspor Kulübü,Okay Yokuşlu,Midfielder,56,38.517857142857146,36.95,82.0,0.0,19.79833883888294,2.0,2.0
+Beşiktaş Jimnastik Kulübü,Mert Günok,Goalkeeper,64,38.43125,38.0,83.2,0.0,22.642065606314166,0.0,0.0
+Vitória Sport Clube,João Mendes,Midfielder,73,38.324657534246576,36.9,98.5,0.0,21.35096784705762,6.0,4.0
+Trabzonspor Kulübü,Mathias Løvik,Defender,16,38.1875,38.2,68.9,0.0,18.45975351948124,0.0,2.0
+Fußballclub Red Bull Salzburg,Tim Drexler,Defender,15,38.04,39.6,66.8,0.0,20.10873299979745,0.0,0.0
+Rangers Football Club,Connor Barron,Midfielder,78,38.03076923076923,39.5,100.0,0.0,20.297183655267656,0.0,3.0
+Rangers Football Club,Rıdvan Yılmaz,Defender,30,37.980000000000004,35.0,90.6,0.0,23.065594619961864,0.0,2.0
+Futebol Clube do Porto,Pablo Rosario,Midfielder,42,37.904761904761905,40.95,74.1,0.0,21.40607336181011,2.0,1.0
+Fenerbahçe Spor Kulübü,Sidiki Chérif,Forward,15,37.9,35.1,66.6,0.0,15.698407562552324,2.0,1.0
+Rangers Football Club,Bojan Miovski,Forward,37,37.84054054054054,35.4,78.3,0.0,18.283378296199032,8.0,1.0
+Sporting Clube de Braga,Bright Arrey-Mbi,Defender,78,37.83846153846154,37.9,87.5,0.0,24.076232990337065,0.0,0.0
+Rangers Football Club,Nedim Bajrami,Midfielder,62,37.667741935483875,36.9,96.4,0.0,22.32557729096683,4.0,2.0
+Trabzonspor Kulübü,Ozan Tufan,Midfielder,74,37.40405405405406,37.9,97.1,0.0,23.367014798638223,5.0,4.0
+Sporting Clube de Braga,Leonardo Lelo,Defender,54,37.342592592592595,35.25,97.2,0.0,26.72307745420314,0.0,6.0
+Sporting Clube de Braga,Fran Navarro,Forward,64,37.1515625,34.9,70.0,0.0,18.062141343173952,14.0,2.0
+Fußballclub Red Bull Salzburg,Damir Redzic,Forward,10,37.05,37.15,64.9,0.0,16.172902577390918,0.0,0.0
+Trabzonspor Kulübü,Umut Nayir,Forward,15,37.013333333333335,37.7,66.5,0.0,19.177548877590716,1.0,2.0
+Vitória Sport Clube,Óscar Rivas,Defender,44,36.913636363636364,42.6,85.6,0.0,28.166437151655902,2.0,0.0
+Sporting Clube de Portugal,Eduardo Quaresma,Defender,73,36.9013698630137,40.4,100.0,0.0,32.36247180656547,3.0,2.0
+The Celtic Football Club,James Forrest,Midfielder,62,36.80483870967742,37.55,78.7,0.0,20.716639605180568,1.0,7.0
+Fußballclub Red Bull Salzburg,Aleksa Terzić,Defender,64,36.659375,35.9,95.2,0.0,24.197079180616324,1.0,1.0
+Sport Lisboa e Benfica,Andreas Schjelderup,Forward,91,36.42307692307692,38.2,89.3,0.0,26.106734239455776,12.0,12.0
+Vitória Sport Clube,Alioune Ndoye,Forward,26,36.392307692307696,35.1,68.3,0.0,15.714755437535086,2.0,2.0
+Futebol Clube do Porto,Thiago Silva,Defender,17,36.06470588235294,39.4,74.1,0.0,26.824800585849434,0.0,0.0
+Fußballclub Red Bull Salzburg,Clement Bischoff,Forward,25,35.984,35.5,90.7,0.0,21.77138182722141,0.0,0.0
+The Celtic Football Club,Kelechi Iheanacho,Forward,18,35.37777777777777,34.95,72.5,0.0,20.380716247748552,4.0,0.0
+Galatasaray Spor Kulübü,Kaan Ayhan,Defender,79,35.288607594936714,35.6,99.7,0.0,24.781460126172348,2.0,4.0
+The Celtic Football Club,Luke McCowan,Midfielder,84,35.15119047619047,38.15,100.0,0.0,22.757540755017747,7.0,6.0
+Sporting Clube de Braga,Vítor Carvalho,Midfielder,78,34.715384615384615,38.599999999999994,95.5,0.0,23.502688859285524,6.0,3.0
+Sport Lisboa e Benfica,Franjo Ivanović,Forward,47,34.39148936170213,35.8,75.7,0.0,22.76798696288883,7.0,3.0
+Rangers Football Club,Oliver Antman,Forward,31,33.96451612903226,38.7,77.5,0.0,22.973354832458938,1.0,5.0
+Sport Lisboa e Benfica,Gianluca Prestianni,Forward,65,33.79692307692308,38.1,88.1,0.0,24.427053196908854,3.0,7.0
+Vitória Sport Clube,Miguel Nogueira,Midfielder,19,33.71052631578947,37.4,64.2,0.0,16.872228817294943,1.0,0.0
+Fenerbahçe Spor Kulübü,Oğuz Aydın,Forward,83,33.69036144578313,37.7,94.6,0.0,25.687296919654575,7.0,7.0
+Sporting Clube de Braga,Amine El Ouazzani,Forward,85,33.37294117647058,35.0,78.7,0.0,21.06181032916536,13.0,3.0
+Rangers Football Club,Max Aarons,Defender,39,33.284615384615385,35.1,76.7,0.0,24.90531055672917,1.0,0.0
+Fußballclub Red Bull Salzburg,Jannik Schuster,Defender,40,33.1425,34.6,100.0,0.0,30.59025223909215,0.0,0.0
+Fenerbahçe Spor Kulübü,Çağlar Söyüncü,Defender,74,32.67027027027027,36.8,92.7,0.0,27.057962794912786,2.0,2.0
+Beşiktaş Jimnastik Kulübü,Alex Oxlade-Chamberlain,Midfielder,23,32.49130434782609,36.8,66.3,0.0,18.869333298514675,1.0,0.0
+Sporting Clube de Braga,Diego Rodrigues,Midfielder,56,32.058928571428574,37.15,81.3,0.0,22.988572471680673,1.0,5.0
+Beşiktaş Jimnastik Kulübü,Jota Silva,Forward,27,31.85925925925926,36.0,86.2,0.0,26.72134351843484,5.0,1.0
+Vitória Sport Clube,Matija Mitrović,Midfielder,25,31.52,35.5,75.5,0.0,22.938849869453644,2.0,0.0
+Beşiktaş Jimnastik Kulübü,Gökhan Sazdağı,Midfielder,24,31.150000000000002,36.2,69.5,0.0,23.21905139806721,0.0,0.0
+Sporting Clube de Braga,Paulo Oliveira,Defender,77,31.064935064935064,35.0,98.6,0.0,26.512880515315796,1.0,0.0
+Beşiktaş Jimnastik Kulübü,Tiago Djaló,Defender,28,30.732142857142858,30.3,100.0,0.0,30.40758986115179,2.0,0.0
+Sporting Clube de Portugal,Iván Fresneda,Defender,78,30.47051282051282,35.05,74.6,0.0,22.849258187818695,4.0,1.0
+Trabzonspor Kulübü,Benjamin Bouchouari,Midfielder,22,30.372727272727275,37.2,52.2,0.0,18.299028905230433,0.0,0.0
+Vitória Sport Clube,Alberto Costa,Defender,28,29.789285714285715,32.0,100.0,0.0,32.93124531488929,0.0,3.0
+Fußballclub Red Bull Salzburg,Takumu Kawamura,Midfielder,10,29.72,39.45,55.8,0.0,21.517889198421756,0.0,0.0
+Sporting Clube de Portugal,João Simões,Midfielder,58,29.57241379310345,34.25,65.4,0.0,20.23353819171516,1.0,3.0
+Futebol Clube do Porto,Deniz Gül,Forward,80,29.27125,35.0,70.6,0.0,19.98835859770331,8.0,2.0
+The Celtic Football Club,Paulo Bernardo,Midfielder,71,28.956338028169014,35.5,100.0,0.0,24.70416814104955,2.0,3.0
+Sporting Clube de Portugal,Georgios Vagiannidis,Defender,46,28.821739130434782,28.85,100.0,0.0,28.27407853331762,0.0,5.0
+Vitória Sport Clube,Thiago Balieiro,Defender,20,28.705000000000002,25.95,86.3,0.0,26.874258374100204,1.0,0.0
+Futebol Clube do Porto,Terem Moffi,Forward,18,28.47222222222222,31.65,65.9,0.0,22.12482783065097,2.0,1.0
+The Celtic Football Club,Benjamin Arthur,Defender,8,28.337500000000002,18.45,70.9,0.0,31.85089985272899,0.0,0.0
+Sporting Clube de Braga,Gabriel Moscardo,Midfielder,48,27.420833333333334,35.3,57.8,0.0,18.59453086297647,0.0,0.0
+The Celtic Football Club,Anthony Ralston,Defender,81,26.92839506172839,32.7,100.0,0.0,28.23526268059101,2.0,2.0
+Fenerbahçe Spor Kulübü,Levent Mercan,Defender,64,26.384375,31.450000000000003,87.7,0.0,26.459290196420856,0.0,4.0
+The Celtic Football Club,Junior Adamu,Forward,8,26.3,30.549999999999997,65.1,0.0,24.33656860423366,0.0,1.0
+The Celtic Football Club,Colby Donovan,Defender,40,26.255000000000003,30.15,85.3,0.0,26.019804587452818,0.0,3.0
+Fußballclub Red Bull Salzburg,Valentin Sulzbacher,Midfielder,13,26.03076923076923,35.4,60.0,0.0,23.057550629363064,0.0,1.0
+Fenerbahçe Spor Kulübü,Mert Hakan Yandaş,Midfielder,36,25.952777777777776,34.55,87.9,0.0,23.600248014569814,0.0,2.0
+Futebol Clube do Porto,Tiago Djaló,Defender,28,24.685714285714287,24.85,89.9,0.0,26.731472840298945,1.0,0.0
+Vitória Sport Clube,Diogo Sousa,Midfielder,38,24.642105263157895,30.2,64.6,0.0,23.13699075925877,1.0,1.0
+Beşiktaş Jimnastik Kulübü,Kartal Yılmaz,Midfielder,34,24.40294117647059,32.650000000000006,67.9,0.0,23.512465878622866,0.0,2.0
+Beşiktaş Jimnastik Kulübü,Mustafa Hekimoğlu,Forward,71,23.670422535211266,31.3,70.0,0.0,19.614232400888298,3.0,2.0
+Vitória Sport Clube,FABIO BLANCO,Midfielder,23,23.491304347826084,32.8,52.3,0.0,18.49771270979391,0.0,0.0
+Sport Lisboa e Benfica,Bruma,Forward,28,23.24285714285714,17.45,82.7,0.0,26.507307567864274,1.0,2.0
+Beşiktaş Jimnastik Kulübü,Salih Uçan,Midfielder,78,23.05,33.55,72.2,0.0,21.550012806215495,1.0,1.0
+Fußballclub Red Bull Salzburg,Tim Trummer,Midfielder,56,22.80892857142857,10.35,75.7,0.0,25.37199799912361,0.0,0.0
+The Celtic Football Club,Michel-Ange Balikwisha,Forward,20,22.65,34.650000000000006,63.4,0.0,21.768676192132006,0.0,1.0
+Fußballclub Red Bull Salzburg,Mamady Diambou,Midfielder,68,21.86764705882353,30.35,67.0,0.0,21.900517551142524,0.0,0.0
+Vitória Sport Clube,Juan Castillo,Goalkeeper,34,21.526470588235295,0.0,77.1,0.0,28.965876567913384,0.0,0.0
+Sporting Clube de Portugal,Ricardo Mangas,Defender,37,20.85675675675676,0.0,100.0,0.0,26.61938037241685,2.0,1.0
+Galatasaray Spor Kulübü,Yáser Asprilla,Forward,12,20.349999999999998,28.299999999999997,39.9,0.0,18.407829361936777,0.0,0.0
+Sport Lisboa e Benfica,João Rêgo,Midfielder,36,20.255555555555556,29.200000000000003,73.9,0.0,21.073116854614884,1.0,1.0
+Sport Lisboa e Benfica,Anísio Cabral,Forward,14,19.95,0.0,66.2,0.0,25.680544866014518,2.0,0.0
+Fußballclub Red Bull Salzburg,John Mellberg,Defender,20,19.935,0.0,100.0,0.0,30.76425258058621,0.0,0.0
+Fußballclub Red Bull Salzburg,Anrie Chase,Defender,9,19.755555555555556,0.0,58.8,0.0,26.515236709819842,0.0,0.0
+Fußballclub Red Bull Salzburg,Oliver Lukić,Midfielder,14,19.728571428571428,16.8,49.2,0.0,20.75733155265419,0.0,0.0
+Vitória Sport Clube,Miguel Nóbrega,Defender,26,19.661538461538463,0.0,60.0,0.0,23.36530893308414,1.0,0.0
+Sporting Clube de Portugal,Rafael Nel,Forward,24,18.7625,0.0,77.8,0.0,24.996379085605664,3.0,1.0
+Sport Lisboa e Benfica,Rodrigo Rêgo,Forward,8,18.674999999999997,17.0,39.8,0.0,20.029175148838682,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Ersin Destanoğlu,Goalkeeper,83,18.43132530120482,0.0,86.2,0.0,26.083439881024788,0.0,0.0
+Sporting Clube de Portugal,Souleymane Faye,Forward,14,17.85,15.95,40.5,0.0,18.641589153123352,0.0,0.0
+Vitória Sport Clube,Zé Carlos,Midfielder,29,17.56551724137931,0.0,45.2,0.0,19.304334743820565,0.0,0.0
+Sport Lisboa e Benfica,Daniel Banjaqui,Defender,7,17.085714285714285,0.0,68.7,0.0,29.62838889597996,0.0,0.0
+Galatasaray Spor Kulübü,Ahmed Kutucu,Forward,57,16.724561403508773,0.0,67.5,0.0,20.08122151148888,1.0,1.0
+Futebol Clube do Porto,Fran Navarro,Forward,10,16.71,0.0,67.1,0.0,23.704497932295933,0.0,1.0
+Vitória Sport Clube,Orest Lebedenko,Defender,30,16.553333333333335,0.0,66.3,0.0,20.486929951815004,0.0,0.0
+Sporting Clube de Portugal,Eduardo Felicíssimo,Midfielder,18,16.41111111111111,0.0,68.5,0.0,22.366410974255146,0.0,0.0
+Sport Lisboa e Benfica,Henrique Araújo,Forward,20,15.76,0.0,37.1,0.0,17.900761524524444,0.0,0.0
+Galatasaray Spor Kulübü,Arda Ünyay,Defender,24,15.516666666666666,0.0,62.6,0.0,20.1694488438992,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Taylan Bulut,Defender,23,15.06086956521739,0.0,66.3,0.0,22.103449733437017,0.0,0.0
+Sport Lisboa e Benfica,José Neto,Defender,9,14.922222222222224,0.0,67.8,0.0,24.508558595813923,0.0,0.0
+Sporting Clube de Braga,Sandro Vidigal,Forward,21,14.7,0.0,70.0,0.0,22.763215941514062,1.0,2.0
+Vitória Sport Clube,Rica Rocha,Midfielder,6,13.75,0.0,47.3,0.0,21.642342756735,0.0,0.0
+Sporting Clube de Portugal,Salvador Blopa,Defender,12,13.666666666666666,0.0,35.5,0.0,17.021608370396482,0.0,0.0
+Trabzonspor Kulübü,Salih Malkoçoğlu,Midfielder,44,13.259090909090908,0.0,64.9,0.0,20.487379191372384,0.0,0.0
+Trabzonspor Kulübü,Boran Başkan,Midfielder,11,12.745454545454544,0.0,38.6,0.0,17.825227271278404,0.0,0.0
+Fußballclub Red Bull Salzburg,Enrique Aguilar,Forward,25,12.484000000000002,0.0,39.6,0.0,17.063183563840994,0.0,0.0
+The Celtic Football Club,Dane Murray,Defender,44,12.384090909090908,0.0,100.0,0.0,23.987360462231603,0.0,0.0
+Galatasaray Spor Kulübü,Metehan Baltacı,Defender,58,11.194827586206896,0.0,65.2,0.0,19.698414063990498,0.0,1.0
+Fenerbahçe Spor Kulübü,Mert Günok,Goalkeeper,17,11.182352941176472,0.0,67.2,0.0,20.31422639722338,0.0,0.0
+Fenerbahçe Spor Kulübü,Cengiz Ünder,Forward,26,10.842307692307692,0.0,38.6,0.0,16.62432369937311,0.0,0.0
+Vitória Sport Clube,Charles,Goalkeeper,77,10.718181818181817,0.0,82.1,0.0,21.37083432645091,0.0,0.0
+Galatasaray Spor Kulübü,Renato Nhaga,Midfielder,14,10.685714285714285,0.0,65.2,0.0,21.86401529534694,1.0,0.0
+Galatasaray Spor Kulübü,Günay Güvenç,Goalkeeper,90,10.241111111111111,0.0,82.8,0.0,21.49157082972505,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Necip Uysal,Defender,22,9.527272727272727,0.0,44.4,0.0,16.132610623861396,0.0,0.0
+Fußballclub Red Bull Salzburg,Christian Zawieschitzky,Goalkeeper,27,9.5,0.0,74.9,0.0,21.675526788026666,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Devrim Şahin,Forward,18,8.3,0.0,40.2,0.0,16.003529022577194,0.0,0.0
+Futebol Clube do Porto,Dominik Prpić,Defender,38,8.213157894736844,0.0,53.1,0.0,16.643254798828256,0.0,0.0
+Sporting Clube de Braga,Yanis da Rocha,Midfielder,36,7.416666666666667,0.0,38.4,0.0,14.229355973780802,0.0,0.0
+Sporting Clube de Portugal,Flávio Gonçalves,Forward,15,7.133333333333334,0.0,37.2,0.0,14.775977930733513,0.0,0.0
+Rangers Football Club,Leon King,Defender,20,7.12,0.0,41.4,0.0,14.717572740381513,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Yasin Özcan,Defender,13,7.1,0.0,46.9,0.0,17.333589741693245,0.0,0.0
+Sporting Clube de Braga,João Aragão,Forward,5,7.0,0.0,35.0,0.0,15.652475842498529,0.0,0.0
+Sporting Clube de Braga,Nuno Matos,Defender,5,7.0,0.0,35.0,0.0,15.652475842498529,0.0,0.0
+Sporting Clube de Braga,Thiago Helguera,Midfielder,11,6.363636363636363,0.0,35.0,0.0,14.158197111728084,0.0,0.0
+The Celtic Football Club,Viljami Sinisalo,Goalkeeper,88,6.322727272727272,0.0,100.0,0.0,18.346165168354265,0.0,0.0
+Sport Lisboa e Benfica,Nuno Félix,Midfielder,11,6.199999999999999,0.0,39.3,0.0,13.988781219248516,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Devis Vásquez,Goalkeeper,13,5.915384615384616,0.0,76.9,0.0,21.32822254486006,0.0,0.0
+Rangers Football Club,Bailey Rice,Midfielder,30,5.89,0.0,41.9,0.0,13.589786986734838,0.0,0.0
+Fenerbahçe Spor Kulübü,Tarık Çetin,Goalkeeper,33,5.524242424242424,0.0,80.4,0.0,18.243749448493148,0.0,0.0
+Sport Lisboa e Benfica,João Veloso,Midfielder,20,5.2299999999999995,0.0,35.4,0.0,12.774856060575441,0.0,0.0
+Sport Lisboa e Benfica,Diogo Prioste,Midfielder,22,5.163636363636363,0.0,38.5,0.0,13.30197069018062,0.0,0.0
+Rangers Football Club,Liam Kelly,Goalkeeper,94,5.008510638297872,0.0,91.0,0.0,16.89965743480808,0.0,0.0
+Sporting Clube de Braga,João Carvalho,Goalkeeper,7,4.4,0.0,30.8,0.0,11.6413057686842,0.0,0.0
+Trabzonspor Kulübü,Onuralp Çakıroğlu,Forward,20,3.6049999999999995,0.0,38.0,0.0,11.11397768577929,0.0,0.0
+Sport Lisboa e Benfica,Samuel Soares,Goalkeeper,81,3.577777777777778,0.0,90.2,0.0,16.030385210593042,0.0,0.0
+Sporting Clube de Portugal,João Virgínia,Goalkeeper,46,3.5130434782608693,0.0,65.7,0.0,13.61961997667992,0.0,0.0
+Sporting Clube de Braga,Jonatás Noro,Defender,20,3.3,0.0,33.4,0.0,10.158014725225335,0.0,0.0
+Fenerbahçe Spor Kulübü,Alaettin Ekici,Forward,10,3.1,0.0,31.0,0.0,9.803060746521975,0.0,0.0
+Futebol Clube do Porto,Cláudio Ramos,Goalkeeper,89,2.9280898876404495,0.0,70.7,0.0,11.759435174709374,0.0,0.0
+Sporting Clube de Portugal,Mauro Couto,Forward,14,2.6571428571428575,0.0,37.2,0.0,9.942118199142188,0.0,0.0
+Galatasaray Spor Kulübü,Gökdeniz Gürpüz,Midfielder,15,2.5266666666666664,0.0,37.9,0.0,9.785737921417406,0.0,0.0
+Galatasaray Spor Kulübü,Batuhan Şen,Goalkeeper,31,2.4516129032258065,0.0,42.0,0.0,9.545814823531893,0.0,0.0
+Futebol Clube do Porto,João Costa,Goalkeeper,14,2.4285714285714284,0.0,34.0,0.0,9.086882225022427,0.0,0.0
+Sporting Clube de Braga,Alaa Bellaarouch,Goalkeeper,31,1.1290322580645162,0.0,35.0,0.0,6.286185570937121,0.0,0.0
+Trabzonspor Kulübü,Onuralp Çevikkan,Goalkeeper,36,1.0166666666666666,0.0,36.6,0.0,6.1,0.0,0.0
+Trabzonspor Kulübü,Ahmet Yıldırım,Goalkeeper,30,0.7833333333333333,0.0,23.5,0.0,4.290493367123802,0.0,0.0
+Sporting Clube de Braga,Tiago Sá,Goalkeeper,67,0.5955223880597015,0.0,39.9,0.0,4.874560829816579,0.0,0.0
+Fußballclub Red Bull Salzburg,Salko Hamzić,Goalkeeper,48,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vitória Sport Clube,Nuno Santos,Forward,31,0.0,0.0,0.0,0.0,0.0,3.0,5.0
+Sporting Clube de Portugal,Diego Callai,Goalkeeper,24,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Sport Lisboa e Benfica,Gonçalo Oliveira,Defender,22,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Sport Lisboa e Benfica,Diogo Ferreira,Goalkeeper,17,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+The Celtic Football Club,Ross Doohan,Goalkeeper,15,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Emre Bilgin,Goalkeeper,14,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Vitória Sport Clube,Gui,Goalkeeper,13,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Futebol Clube do Porto,Gabriel Brás,Defender,10,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Sport Lisboa e Benfica,Joshua Wynder,Defender,9,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Galatasaray Spor Kulübü,Furkan Koçak,Midfielder,7,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Futebol Clube do Porto,André Oliveira,Midfielder,6,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Galatasaray Spor Kulübü,Eyüp Karasu,Midfielder,6,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rangers Football Club,Aiden McCallion,Midfielder,6,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Beşiktaş Jimnastik Kulübü,Emir Yaşar,Goalkeeper,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Sporting Clube de Portugal,Bruno Ramos,Defender,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0
