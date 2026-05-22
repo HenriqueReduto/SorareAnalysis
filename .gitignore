@@ -6,4 +6,5 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 data/transfermarkt/
+context_dataset/cache/
 test_write.tmp
