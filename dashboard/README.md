@@ -64,6 +64,8 @@ It also uses these optional files when available:
 ```text
 outputs/shap_importance.csv
 outputs/score_correlations.csv
+outputs/sorare_all_around_scoring_matrix.csv
+outputs/sorare_decisive_scoring_matrix.csv
 ```
 
 ## Run
@@ -93,6 +95,7 @@ Only the Overview tab loads automatically. The heavier analysis tabs use explici
 - **Overview**: KPI cards, summary table, score, age, and position distributions.
 - **Player Rankings**: searchable rankings, metric selector, radar chart, percentiles, and two-player comparison.
 - **Feature Importance**: model importance, SHAP importance when available, heatmap, and correlation rankings.
+- **Sorare Scoring Matrix**: official matrix reference tables plus partial local score-gap diagnostics.
 - **Overperformers & Underperformers**: expected vs actual scores, residuals, ranking bars, and team residual summaries.
 - **Outliers**: outlier table, scatterplot, boxplot, and interpretation guide.
 - **Player Profile**: detailed player explorer with radar, percentile, and comparison visuals.

@@ -34,6 +34,13 @@ from dashboard.utils.helpers import (
     safe_round,
 )
 
+try:
+    from src.analyses.sorare_scoring import SCORING_SOURCE_URL, decisive_score_dataframe, scoring_matrix_dataframe
+except ImportError:  # pragma: no cover - fallback for unusual launch paths
+    SCORING_SOURCE_URL = "https://sorare.com/pt/help/a/4402904001809/how-does-scoring-work-in-sorare-football"
+    decisive_score_dataframe = None
+    scoring_matrix_dataframe = None
+
 
 DATA = load_dashboard_data()
 FINAL_DF = DATA.get("final")
@@ -45,6 +52,8 @@ FEATURE_DF = DATA.get("feature_importance")
 SHAP_DF = DATA.get("shap")
 CORR_DF = DATA.get("correlations")
 UNMATCHED_DF = DATA.get("unmatched")
+SCORING_MATRIX_DF = DATA.get("scoring_matrix")
+DECISIVE_MATRIX_DF = DATA.get("decisive_matrix")
 
 APP_CSS = """
 .gradio-container {max-width: 1500px !important}
@@ -87,6 +96,10 @@ def _display_cols(df: pd.DataFrame, extra: list[str] | None = None) -> list[str]
         "consistency_score",
         "expected_score",
         "score_residual",
+        "avg_sorare_decisive_level",
+        "avg_sorare_all_around_estimate",
+        "avg_sorare_matrix_score_estimate",
+        "avg_sorare_matrix_score_gap",
         "transfermarkt_match_confidence",
         "outlier_category",
     ]
@@ -186,6 +199,30 @@ def feature_view(target, importance_metric):
         charts.correlation_bars(CORR_DF, positive=False),
         feature_table.head(50) if not feature_table.empty else empty_df("No feature importance file found."),
     )
+
+
+def scoring_matrix_view():
+    all_around = SCORING_MATRIX_DF.copy()
+    if all_around.empty and scoring_matrix_dataframe is not None:
+        all_around = scoring_matrix_dataframe("current")
+    decisive = DECISIVE_MATRIX_DF.copy()
+    if decisive.empty and decisive_score_dataframe is not None:
+        decisive = decisive_score_dataframe()
+
+    if "avg_sorare_matrix_score_gap" in FINAL_DF.columns:
+        gap_table = _sort_table(FINAL_DF, "avg_sorare_matrix_score_gap", limit=100)
+        gap_chart = charts.histogram(FINAL_DF, "avg_sorare_matrix_score_gap", "Actual Score Minus Matrix Estimate")
+    else:
+        gap_table = empty_df("Run `python src\\analyses\\player_score_analysis.py` to generate matrix gap diagnostics.")
+        gap_chart = charts.empty_figure("Actual Score Minus Matrix Estimate")
+
+    summary = (
+        f"Official source: {SCORING_SOURCE_URL}\n\n"
+        "The dashboard uses a partial local estimate based on fields available in this project: "
+        "goals, assists, red cards, yellow cards, clean sheets, goals conceded, and minutes. "
+        "It is useful for diagnostics, but it is not a complete official score recreation."
+    )
+    return summary, all_around, decisive, gap_table, gap_chart
 
 
 def residual_view(positions, teams, leagues, age_min, age_max):
@@ -355,6 +392,20 @@ def build_dashboard() -> gr.Blocks:
                 neg_corr = gr.Plot()
             feature_table = gr.Dataframe(label="Variable Explanations", interactive=False, wrap=True)
             feature_refresh.click(feature_view, [target, imp_metric], [imp_plot, shap_plot, heatmap, pos_corr, neg_corr, feature_table], show_progress="full")
+
+        with gr.Tab("Sorare Scoring Matrix"):
+            scoring_refresh = gr.Button("Load Scoring Matrix", variant="primary")
+            scoring_summary = gr.Textbox(label="Scoring source and local coverage", interactive=False, lines=5)
+            decisive_table = gr.Dataframe(label="Decisive Score Levels", interactive=False, wrap=True)
+            all_around_table = gr.Dataframe(label="All-Around Matrix", interactive=False, wrap=True)
+            scoring_gap_table = gr.Dataframe(label="Player Matrix Gap Diagnostics", interactive=False, wrap=True)
+            scoring_gap_plot = gr.Plot()
+            scoring_refresh.click(
+                scoring_matrix_view,
+                None,
+                [scoring_summary, all_around_table, decisive_table, scoring_gap_table, scoring_gap_plot],
+                show_progress="full",
+            )
 
         with gr.Tab("Overperformers & Underperformers"):
             with gr.Row():

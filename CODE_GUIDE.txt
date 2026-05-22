@@ -81,10 +81,17 @@ src/analyses/player_score_analysis.py
   files, outliers, overperformers, underperformers, and dashboard figures to
   outputs/.
 
+src/analyses/sorare_scoring.py
+  Local source-of-truth for Sorare Football scoring matrix constants and helper
+  functions. It stores decisive score levels, decisive impact events, the
+  all-around matrix, card-score calculation, and partial matrix-score estimates
+  based on the stats available in this repository.
+
 dashboard/app.py
   Local Gradio dashboard. It loads files from outputs/ and provides tabs for
   overview KPIs, rankings, feature importance, over/underperformers, outliers,
-  player profiles, Transfermarkt data quality, and exports.
+  Sorare scoring matrix diagnostics, player profiles, Transfermarkt data
+  quality, and exports.
 
 dashboard/launch_share.py
   Optional public Gradio share launcher. The generated link is temporary and
@@ -118,6 +125,24 @@ Recommended Workflow
 
 8. Launch the dashboard:
    python dashboard/app.py
+
+
+Sorare Scoring Matrix
+---------------------
+The official Sorare Football scoring article is used as the reference for:
+- Decisive Score levels and guaranteed minimums
+- positive and negative decisive impact events
+- All-Around Score event weights by position
+- Card Score bonus calculation
+
+The local dataset does not contain every official All-Around event. The code
+therefore adds partial diagnostic columns such as:
+- sorare_matrix_score_estimate at row level
+- avg_sorare_matrix_score_estimate at player level
+- avg_sorare_matrix_score_gap at player level
+
+These columns help explain why Sorare scores move, but they are not official
+replacement scores.
 
 
 Dashboard Notes

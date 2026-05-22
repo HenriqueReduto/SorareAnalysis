@@ -62,6 +62,21 @@ try:
 except Exception:  # pragma: no cover - SHAP is optional
     shap = None
 
+try:
+    from .sorare_scoring import (
+        SCORING_SOURCE_URL,
+        add_sorare_scoring_features,
+        decisive_score_dataframe,
+        scoring_matrix_dataframe,
+    )
+except ImportError:  # pragma: no cover - supports direct script execution
+    from sorare_scoring import (
+        SCORING_SOURCE_URL,
+        add_sorare_scoring_features,
+        decisive_score_dataframe,
+        scoring_matrix_dataframe,
+    )
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
@@ -563,6 +578,18 @@ def aggregate_player_dataset(df: pd.DataFrame, cmap: ColumnMap) -> pd.DataFrame:
         named_aggs[cmap.team] = (cmap.team, mode_value)
     if cmap.league:
         named_aggs[cmap.league] = ("_league", mode_value)
+    scoring_aggs = {
+        "avg_sorare_decisive_level": ("sorare_decisive_level", "mean"),
+        "max_sorare_decisive_level": ("sorare_decisive_level", "max"),
+        "avg_sorare_decisive_score": ("sorare_decisive_score", "mean"),
+        "avg_sorare_all_around_estimate": ("sorare_all_around_estimate", "mean"),
+        "avg_sorare_matrix_score_estimate": ("sorare_matrix_score_estimate", "mean"),
+        "avg_sorare_matrix_score_gap": ("sorare_matrix_score_gap", "mean"),
+        "avg_sorare_matrix_coverage_events": ("sorare_matrix_coverage_events", "mean"),
+    }
+    for output_col, agg_spec in scoring_aggs.items():
+        if agg_spec[0] in work.columns:
+            named_aggs[output_col] = agg_spec
 
     agg = (
         work.groupby(group_cols, dropna=False)
@@ -610,6 +637,8 @@ def prepare_model_data(player_df: pd.DataFrame, target: str = "avg_score") -> tu
         "consistency_score",
         "expected_score",
         "score_residual",
+        "avg_sorare_matrix_score_estimate",
+        "avg_sorare_matrix_score_gap",
     }
     candidates = [c for c in player_df.columns if c not in exclude]
     numeric = [c for c in candidates if pd.api.types.is_numeric_dtype(player_df[c])]
@@ -728,7 +757,12 @@ def build_rankings(player_df: pd.DataFrame, cmap: ColumnMap) -> dict[str, pd.Dat
         "height_cm",
         "consistency_score",
         "availability_rate",
+        "avg_sorare_decisive_level",
+        "avg_sorare_all_around_estimate",
+        "avg_sorare_matrix_score_estimate",
+        "avg_sorare_matrix_score_gap",
     ]
+    rank_cols = [c for c in rank_cols if c in player_df.columns]
     eligible = player_df[player_df["appearances"] >= max(3, player_df["appearances"].quantile(0.25))].copy()
     rankings = {
         "player_rankings": player_df[rank_cols].sort_values("minutes_adjusted_score", ascending=False),
@@ -912,6 +946,12 @@ def write_summary(
 - Age outside 14-50 and height outside 140-220 cm are flagged and excluded from numeric age/height values.
 - Rankings use minutes-adjusted and position-adjusted scores to reduce unfair comparisons across availability and roles.
 
+## Sorare Scoring Matrix
+- Source: {SCORING_SOURCE_URL}
+- Official player score combines Decisive Score and All-Around Score, then clamps the result between 0 and 100.
+- This pipeline now adds partial Sorare matrix estimates from locally available Transfermarkt fields: goals, assists, red cards, yellow cards, clean sheets, goals conceded, and minutes.
+- Matrix estimates are not official replacement scores because many All-Around events are not available in the local dataset.
+
 ## Transfermarkt Matching Summary
 {tm_summary}
 
@@ -954,6 +994,11 @@ def write_summary(
 
 
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8")
+
     OUTPUT_DIR.mkdir(exist_ok=True)
     FIGURE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -978,6 +1023,12 @@ def main() -> None:
     cleaned.to_csv(cleaned_path, index=False)
 
     enriched, unmatched, tm_summary = enrich_with_transfermarkt(cleaned, cmap)
+    enriched = add_sorare_scoring_features(
+        enriched,
+        position_col=cmap.position or "Position",
+        score_col=cmap.score,
+        version="current",
+    )
     enriched_path = OUTPUT_DIR / "enriched_player_dataset.csv"
     unmatched_path = OUTPUT_DIR / "unmatched_transfermarkt_players.csv"
     enriched.to_csv(enriched_path, index=False)
@@ -997,6 +1048,8 @@ def main() -> None:
 
     final_path = OUTPUT_DIR / "final_player_analysis_dataset.csv"
     feature_path = OUTPUT_DIR / "feature_importance.csv"
+    scoring_matrix_path = OUTPUT_DIR / "sorare_all_around_scoring_matrix.csv"
+    decisive_matrix_path = OUTPUT_DIR / "sorare_decisive_scoring_matrix.csv"
     rankings_path = OUTPUT_DIR / "player_rankings.csv"
     best_path = OUTPUT_DIR / "best_players.csv"
     over_path = OUTPUT_DIR / "overperformers.csv"
@@ -1005,6 +1058,8 @@ def main() -> None:
 
     player_df.to_csv(final_path, index=False)
     importance.to_csv(feature_path, index=False)
+    scoring_matrix_dataframe("current").to_csv(scoring_matrix_path, index=False)
+    decisive_score_dataframe().to_csv(decisive_matrix_path, index=False)
     if not shap_df.empty:
         shap_df.to_csv(OUTPUT_DIR / "shap_importance.csv", index=False)
     rankings["player_rankings"].to_csv(rankings_path, index=False)
@@ -1027,6 +1082,8 @@ def main() -> None:
         enriched_path,
         final_path,
         feature_path,
+        scoring_matrix_path,
+        decisive_matrix_path,
         rankings_path,
         best_path,
         over_path,

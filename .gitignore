@@ -18,3 +18,4 @@ dashboard/gradio_share_url.txt
 # Local environments
 .venv/
 venv/
+.uv-cache/

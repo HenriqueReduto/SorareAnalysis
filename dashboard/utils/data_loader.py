@@ -23,6 +23,8 @@ EXPECTED_FILES = {
 OPTIONAL_FILES = {
     "shap": "shap_importance.csv",
     "correlations": "score_correlations.csv",
+    "scoring_matrix": "sorare_all_around_scoring_matrix.csv",
+    "decisive_matrix": "sorare_decisive_scoring_matrix.csv",
 }
 
 

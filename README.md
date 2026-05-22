@@ -448,6 +448,8 @@ Generated files include:
 - `underperformers.csv`
 - `outliers.csv`
 - `unmatched_transfermarkt_players.csv`
+- `sorare_all_around_scoring_matrix.csv`
+- `sorare_decisive_scoring_matrix.csv`
 - figures under `outputs/figures/`
 
 Open the interactive dashboard after generating those outputs:
@@ -494,6 +496,7 @@ Analyses:
 - `src/analyses/analyse_score_drivers.py`: explanatory variable-impact modelling.
 - `src/analyses/forecast_scores.py`: leakage-aware forecasting models.
 - `src/analyses/player_score_analysis.py`: player-level dashboard dataset, ranking, outlier, and residual analysis.
+- `src/analyses/sorare_scoring.py`: Sorare scoring matrix constants and partial score-estimation helpers.
 - `src/analyses/model_predictions.py`: baseline next-score prediction model.
 - `src/analyses/visualise.py`: chart generation.
 - `src/analyses/inspect_dataset.py`: dataset inspection helper.

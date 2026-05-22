@@ -36,6 +36,10 @@ def metric_options(df: pd.DataFrame) -> list[str]:
         "consistency_score",
         "expected_score",
         "score_residual",
+        "avg_sorare_matrix_score_estimate",
+        "avg_sorare_matrix_score_gap",
+        "avg_sorare_all_around_estimate",
+        "avg_sorare_decisive_score",
         "total_score",
         "median_score",
     ]
@@ -90,6 +94,11 @@ def describe_feature(feature: str) -> str:
         "position_adjusted_height": "Height compared with positional norms, useful for physical-profile context.",
         "score_std": "Score volatility. High values indicate boom-bust performance patterns.",
         "transfermarkt_match_confidence": "Confidence in the Transfermarkt match, useful for data quality context.",
+        "avg_sorare_decisive_level": "Average decisive impact level estimated from available local event columns.",
+        "avg_sorare_decisive_score": "Average decisive score implied by goals, assists, red cards, and goalkeeper clean sheets available locally.",
+        "avg_sorare_all_around_estimate": "Partial All-Around estimate from local yellow-card, clean-sheet, and goals-conceded fields.",
+        "avg_sorare_matrix_score_estimate": "Partial player score estimate using the Sorare matrix and available local stats.",
+        "avg_sorare_matrix_score_gap": "Actual average score minus the partial Sorare matrix estimate. Large gaps often mean missing all-around events or data differences.",
     }
     return mapping.get(feature, "Model-derived or dataset variable. Inspect it with correlations and player examples.")
 
