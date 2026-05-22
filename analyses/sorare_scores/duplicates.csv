@@ -1,0 +1,7 @@
+team,team_slug,player_name,player_id,position,sorare_score,match_date,Selected Club,Selected Club Slug,Score Scope,Sorare GW API,gameweek,score_missing,score_is_zero
+Galatasaray Spor Kulübü,galatasaray-istanbul,Leroy Sané,leroy-sane,FWD,68.9,2026-03-30 18:45:00+00:00,Galatasaray Spor Kulübü,galatasaray-istanbul,Whole player history since 2024-08-01,669.0,669.0,False,False
+Galatasaray Spor Kulübü,galatasaray-istanbul,Leroy Sané,leroy-sane,FWD,0.0,2026-03-30 18:45:00+00:00,Galatasaray Spor Kulübü,galatasaray-istanbul,Whole player history since 2024-08-01,669.0,669.0,False,True
+FC Porto,porto-porto,Pablo Rosario,pablo-paulino-rosario,MID,0.0,2026-03-27 00:00:00+00:00,FC Porto,porto-porto,Whole player history since 2024-08-01,668.0,668.0,False,True
+FC Porto,porto-porto,Pablo Rosario,pablo-paulino-rosario,MID,0.0,2026-03-27 00:00:00+00:00,FC Porto,porto-porto,Whole player history since 2024-08-01,668.0,668.0,False,True
+Celtic FC,celtic-glasgow,Michel-Ange Balikwisha,michel-ange-balikwisha,FWD,38.1,2025-12-27 15:00:00+00:00,Celtic FC,celtic-glasgow,Whole player history since 2024-08-01,643.0,643.0,False,False
+Celtic FC,celtic-glasgow,Michel-Ange Balikwisha,michel-ange-balikwisha,FWD,0.0,2025-12-27 15:00:00+00:00,Celtic FC,celtic-glasgow,Whole player history since 2024-08-01,643.0,643.0,False,True

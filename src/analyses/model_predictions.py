@@ -49,7 +49,7 @@ def train_baseline_model(df: pd.DataFrame) -> tuple[pd.DataFrame, dict[str, obje
 
     metrics = {
         "MAE": mean_absolute_error(test["next_score"], preds),
-        "RMSE": mean_squared_error(test["next_score"], preds, squared=False),
+        "RMSE": float(np.sqrt(mean_squared_error(test["next_score"], preds))),
         "R2": r2_score(test["next_score"], preds),
         "feature_importance": dict(zip(feature_cols, model.feature_importances_)),
         "limitations": "Baseline model only uses historical score features and does not include injuries, lineups, opponent, home/away, or transfer context.",

@@ -12,11 +12,11 @@ import pandas as pd
 import requests
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-if str(PROJECT_ROOT / "src") not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT / "src"))
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
-from build_squad_memberships import normalise_name  # noqa: E402
+from src.data_extraction.build_squad_memberships import normalise_name  # noqa: E402
 
 
 BASE_URL = "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data"
@@ -27,11 +27,12 @@ REMOTE_TABLES = {
     "game_events": f"{BASE_URL}/game_events.csv.gz",
 }
 
-MATCHED_SCORES = PROJECT_ROOT / "sorare_outputs" / "club_player_gw_matched_scores.csv"
-MATCHDAY_SQUADS = PROJECT_ROOT / "data" / "club_matchday_squads.csv"
-OUTPUT_FILE = PROJECT_ROOT / "context_dataset" / "sorare_context_dataset.csv"
-SUMMARY_FILE = PROJECT_ROOT / "context_dataset" / "context_summary.csv"
-CACHE_DIR = PROJECT_ROOT / "context_dataset" / "cache"
+DATASETS_DIR = PROJECT_ROOT / "data_preparation" / "datasets"
+MATCHED_SCORES = DATASETS_DIR / "combined" / "club_player_gw_matched_scores.csv"
+MATCHDAY_SQUADS = DATASETS_DIR / "transfermarkt" / "club_matchday_squads.csv"
+OUTPUT_FILE = DATASETS_DIR / "combined" / "sorare_transfermarkt_context.csv"
+SUMMARY_FILE = DATASETS_DIR / "combined" / "context_summary.csv"
+CACHE_DIR = PROJECT_ROOT / "data_preparation" / "cache" / "transfermarkt"
 
 
 def read_remote_table(name: str) -> pd.DataFrame:

@@ -4,8 +4,8 @@ This script uses dcaribou's Transfermarkt dataset:
 https://github.com/dcaribou/transfermarkt-datasets
 
 It creates two useful files:
-- data/club_matchday_squads.csv: player was in matchday squad for a club/game date.
-- sorare_outputs/club_player_gw_matched_scores.csv: Sorare scores matched to tracked clubs when possible.
+- data_preparation/datasets/transfermarkt/club_matchday_squads.csv: player was in matchday squad for a club/game date.
+- data_preparation/datasets/combined/club_player_gw_matched_scores.csv: Sorare scores matched to tracked clubs when possible.
 
 The match is intentionally conservative:
 - club comes from a manual Sorare slug -> Transfermarkt club name map;
@@ -372,11 +372,11 @@ def match_sorare_scores_to_clubs(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build club/player/GW matching data from Transfermarkt.")
-    parser.add_argument("--scores", default="sorare_outputs/all_players_scores_final.csv")
+    parser.add_argument("--scores", default="data_preparation/datasets/sorare/all_players_scores_long.csv")
     parser.add_argument("--club-map", default="config/club_name_map.csv")
     parser.add_argument("--start-date", default="2024-08-01")
-    parser.add_argument("--squads-output", default="data/club_matchday_squads.csv")
-    parser.add_argument("--matched-output", default="sorare_outputs/club_player_gw_matched_scores.csv")
+    parser.add_argument("--squads-output", default="data_preparation/datasets/transfermarkt/club_matchday_squads.csv")
+    parser.add_argument("--matched-output", default="data_preparation/datasets/combined/club_player_gw_matched_scores.csv")
     parser.add_argument("--tolerance-days", type=int, default=1)
     parser.add_argument("--build-squads-only", action="store_true", help="Only build Transfermarkt squad data.")
     parser.add_argument("--match-only", action="store_true", help="Only match existing squad data to Sorare scores.")

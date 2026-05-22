@@ -3,25 +3,29 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 
-from analyse_scores import build_rankings, write_summary
-from clean_data import clean_scores
-from feature_engineering import add_features
-from inspect_dataset import inspect_dataset
-from load_data import load_data
-from model_predictions import train_baseline_model
-from visualise import save_charts
+from analyses.analyse_scores import build_rankings, write_summary
+from analyses.inspect_dataset import inspect_dataset
+from analyses.model_predictions import train_baseline_model
+from analyses.visualise import save_charts
+from data_extraction.load_data import load_data
+from data_preparation.clean_data import clean_scores
+from data_preparation.feature_engineering import add_features
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Analyse Sorare football player scores.")
     parser.add_argument("--input", required=True, help="Path to CSV or Excel file.")
-    parser.add_argument("--outputs", default="outputs", help="Output directory.")
+    parser.add_argument("--outputs", default="analyses/sorare_scores", help="Output directory.")
     return parser.parse_args()
 
 
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+
     args = parse_args()
     output_dir = Path(args.outputs)
     charts_dir = output_dir / "charts"

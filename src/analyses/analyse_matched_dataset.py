@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
 import pandas as pd
 
 
-INPUT_FILE = Path("sorare_outputs/club_player_gw_matched_scores.csv")
-OUTPUT_DIR = Path("outputs/matched_analysis")
+INPUT_FILE = Path("data_preparation/datasets/combined/club_player_gw_matched_scores.csv")
+OUTPUT_DIR = Path("analyses/matched_dataset")
 
 
 def load_matched_dataset(path: Path = INPUT_FILE) -> pd.DataFrame:
@@ -101,6 +102,9 @@ def build_tables(df: pd.DataFrame) -> dict[str, pd.DataFrame]:
 
 
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     df = load_matched_dataset()
     tables = build_tables(df)
