@@ -7,6 +7,7 @@ The project is organized around three main stages:
 1. `data_extraction/`: collect source data from Sorare and Transfermarkt.
 2. `data_preparation/`: clean, reshape, and combine datasets.
 3. `analyses/`: generate summaries, charts, variable-impact tables, and forecast model outputs.
+4. `outputs/` and `dashboard/`: generate player-level dashboard datasets and explore them interactively.
 
 ## Quick Start
 
@@ -40,6 +41,18 @@ Run the forecasting models:
 python src\analyses\forecast_scores.py
 ```
 
+Run the full player-level analysis used by the dashboard:
+
+```powershell
+python src\analyses\player_score_analysis.py
+```
+
+Run the dashboard:
+
+```powershell
+python dashboard\app.py
+```
+
 ## Project Structure
 
 ```text
@@ -63,6 +76,13 @@ SORARE/
     sorare_lineups/
     sorare_scores/
     README.md
+  dashboard/
+    app.py
+    launch_share.py
+    utils/
+    README.md
+  outputs/
+    figures/
   src/
     data_extraction/
     data_preparation/
@@ -113,7 +133,6 @@ data_preparation/datasets/transfermarkt/
 Important files:
 
 - `club_matchday_squads.csv`: Transfermarkt matchday squad data for tracked clubs.
-- `Liga Portugal.xls`: local Transfermarkt-related source workbook.
 
 The matchday squad table contains Transfermarkt identifiers, player names, club IDs, match dates, lineup status, and available appearance stats such as goals, assists, and minutes.
 
@@ -144,7 +163,8 @@ Sorare API extraction notebook
   -> src/data_preparation/build_context_dataset.py
   -> data_preparation/datasets/combined/sorare_transfermarkt_context.csv
   -> analysis scripts in src/analyses/
-  -> outputs in analyses/
+  -> outputs in analyses/ and outputs/
+  -> dashboard/app.py
 ```
 
 ## Data Extraction
@@ -398,6 +418,44 @@ The forecast script trains two models:
 
 The model uses a temporal split: older matches train the model, newer matches test it.
 
+### Player-Level Dashboard Outputs
+
+Run:
+
+```powershell
+python src\analyses\player_score_analysis.py
+```
+
+Input:
+
+```text
+data_preparation/datasets/combined/sorare_transfermarkt_context.csv
+```
+
+Outputs:
+
+```text
+outputs/
+```
+
+Generated files include:
+
+- `final_player_analysis_dataset.csv`
+- `player_rankings.csv`
+- `best_players.csv`
+- `feature_importance.csv`
+- `overperformers.csv`
+- `underperformers.csv`
+- `outliers.csv`
+- `unmatched_transfermarkt_players.csv`
+- figures under `outputs/figures/`
+
+Open the interactive dashboard after generating those outputs:
+
+```powershell
+python dashboard\app.py
+```
+
 ## Important Files After Reorganization
 
 If your IDE still has old paths open, use the new paths below:
@@ -412,6 +470,7 @@ If your IDE still has old paths open, use the new paths below:
 | `sorare_outputs/all_players_scores_final.csv` | `data_preparation/datasets/sorare/all_players_scores_long.csv` |
 | `sorare_outputs/club_player_gw_matched_scores.csv` | `data_preparation/datasets/combined/club_player_gw_matched_scores.csv` |
 | `data/club_matchday_squads.csv` | `data_preparation/datasets/transfermarkt/club_matchday_squads.csv` |
+| `analysis/player_score_analysis.py` | `src/analyses/player_score_analysis.py` |
 
 ## Source Code Map
 
@@ -434,9 +493,16 @@ Analyses:
 - `src/analyses/analyse_matched_dataset.py`: summaries for matched Sorare + Transfermarkt data.
 - `src/analyses/analyse_score_drivers.py`: explanatory variable-impact modelling.
 - `src/analyses/forecast_scores.py`: leakage-aware forecasting models.
+- `src/analyses/player_score_analysis.py`: player-level dashboard dataset, ranking, outlier, and residual analysis.
 - `src/analyses/model_predictions.py`: baseline next-score prediction model.
 - `src/analyses/visualise.py`: chart generation.
 - `src/analyses/inspect_dataset.py`: dataset inspection helper.
+
+Dashboard:
+
+- `dashboard/app.py`: local Gradio dashboard.
+- `dashboard/launch_share.py`: optional temporary public Gradio share launcher.
+- `dashboard/utils/`: reusable data loading, filtering, charting, and helper utilities.
 
 ## Methodology Notes
 
@@ -467,6 +533,7 @@ python src\main.py --input data_preparation\datasets\sorare\all_players_scores_l
 python src\analyses\analyse_matched_dataset.py
 python src\analyses\analyse_score_drivers.py
 python src\analyses\forecast_scores.py
+python src\analyses\player_score_analysis.py
 ```
 
 ## Troubleshooting

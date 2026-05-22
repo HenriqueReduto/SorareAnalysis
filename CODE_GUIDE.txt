@@ -1,0 +1,159 @@
+SorareAnalysis Code Guide
+=========================
+
+Purpose
+-------
+This project collects Sorare football score data, enriches it with
+Transfermarkt match and player context, creates analysis-ready datasets, runs
+score and forecasting analyses, and exposes the player-level outputs through a
+Gradio dashboard.
+
+
+Top-Level Folders
+-----------------
+config/
+  Project configuration files. The most important file is club_name_map.csv,
+  which maps local club names to Transfermarkt club identifiers.
+
+data_extraction/
+  Notebook-facing extraction area. The Sorare API notebook lives here and
+  creates the raw Sorare score exports used by the rest of the project.
+
+data_preparation/
+  Data provenance folders and documentation. Datasets are split into:
+  - datasets/sorare/ for Sorare-only data
+  - datasets/transfermarkt/ for Transfermarkt-only data
+  - datasets/combined/ for joined Sorare + Transfermarkt data
+
+src/
+  Main Python source code. This is where reusable pipeline and analysis code
+  should live.
+
+analyses/
+  Generated analysis outputs from the original analysis scripts, including
+  matched-dataset summaries, score-variable-impact files, lineup analysis, and
+  Sorare score charts.
+
+outputs/
+  Generated player-level dashboard outputs from
+  src/analyses/player_score_analysis.py. This folder is ignored by git because
+  it can be regenerated.
+
+dashboard/
+  Gradio app for exploring the generated player-level outputs interactively.
+
+
+Main Code Entry Points
+----------------------
+src/main.py
+  Runs the standard Sorare score analysis from a Sorare score CSV. It cleans
+  scores, engineers historical features, creates rankings, saves charts, and
+  trains a baseline model.
+
+src/data_extraction/build_squad_memberships.py
+  Downloads or reads Transfermarkt source data, builds club matchday squads,
+  and matches Sorare player scores to Transfermarkt club/player/matchday
+  context.
+
+src/data_preparation/build_context_dataset.py
+  Builds the rich combined modelling dataset:
+  data_preparation/datasets/combined/sorare_transfermarkt_context.csv
+
+src/data_preparation/enrich_context_player_metadata.py
+  Adds Transfermarkt player metadata such as age and height to the combined
+  context dataset.
+
+src/analyses/analyse_matched_dataset.py
+  Creates matched-dataset summaries under analyses/matched_dataset/.
+
+src/analyses/analyse_score_drivers.py
+  Explains which variables are associated with Sorare score variation. This is
+  useful for interpretation but may include post-match variables, so it is not
+  always valid for pre-match prediction.
+
+src/analyses/forecast_scores.py
+  Trains leakage-aware forecasting models and writes forecast outputs under
+  analyses/score_variable_impact/.
+
+src/analyses/player_score_analysis.py
+  Runs the player-level analysis used by the dashboard. It writes files such
+  as final_player_analysis_dataset.csv, player_rankings.csv, feature_importance
+  files, outliers, overperformers, underperformers, and dashboard figures to
+  outputs/.
+
+dashboard/app.py
+  Local Gradio dashboard. It loads files from outputs/ and provides tabs for
+  overview KPIs, rankings, feature importance, over/underperformers, outliers,
+  player profiles, Transfermarkt data quality, and exports.
+
+dashboard/launch_share.py
+  Optional public Gradio share launcher. The generated link is temporary and
+  only works while the process is running on the local machine.
+
+
+Recommended Workflow
+--------------------
+1. Refresh or create Sorare score data:
+   data_extraction/notebooks/sorare_api_extraction.ipynb
+
+2. Rebuild Transfermarkt matchday squads and matched scores:
+   python src/data_extraction/build_squad_memberships.py --start-date 2024-08-01
+
+3. Rebuild the combined context dataset:
+   python src/data_preparation/build_context_dataset.py
+
+4. Optionally enrich the context dataset with player metadata:
+   python src/data_preparation/enrich_context_player_metadata.py
+
+5. Run the standard score analysis:
+   python src/main.py --input data_preparation/datasets/sorare/all_players_scores_long.csv
+
+6. Run matched-dataset and variable-impact analyses:
+   python src/analyses/analyse_matched_dataset.py
+   python src/analyses/analyse_score_drivers.py
+   python src/analyses/forecast_scores.py
+
+7. Build the dashboard outputs:
+   python src/analyses/player_score_analysis.py
+
+8. Launch the dashboard:
+   python dashboard/app.py
+
+
+Dashboard Notes
+---------------
+The dashboard is intentionally defensive:
+- missing output files are shown as UI warnings instead of crashing the app
+- chart functions validate required columns before plotting
+- heavier tabs use explicit update buttons so slower machines do not render
+  every chart at startup
+- generated share logs and URL files are ignored by git
+
+
+Generated vs Source Files
+-------------------------
+Commit source code, documentation, configuration, and lightweight examples.
+
+Do not commit regenerated cache/runtime folders:
+- outputs/
+- .gradio/
+- dashboard/*.log
+- dashboard/gradio_share_url.txt
+- data_preparation/cache/
+
+Large source datasets under data_preparation/datasets/ should only be committed
+when intentionally updating the project data snapshot.
+
+
+Useful Checks
+-------------
+Syntax check selected files:
+  python -m py_compile dashboard/app.py dashboard/launch_share.py src/analyses/player_score_analysis.py
+
+Build dashboard object without launching:
+  python -c "from dashboard.app import build_dashboard; app = build_dashboard(); print(type(app).__name__)"
+
+Git review before publishing:
+  git status -sb
+  git diff --stat
+  git diff --cached --stat

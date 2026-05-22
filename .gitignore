@@ -8,3 +8,13 @@ __pycache__/
 data/transfermarkt/
 data_preparation/cache/
 test_write.tmp
+
+# Generated analysis/dashboard artifacts
+outputs/
+.gradio/
+dashboard/*.log
+dashboard/gradio_share_url.txt
+
+# Local environments
+.venv/
+venv/
